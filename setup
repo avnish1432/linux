@@ -1,19 +1,10 @@
 # SSH	
 git@github.com:avnish1432/linux.git
 
-#or create a new repository on the command line
-echo "# linux" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:avnish1432/linux.git
-git push -u origin main
+git config --global user.name "your_name"
+git config --global user.email "your_email_address"
+git config --list
 
-#or push an existing repository from the command line
-git remote add origin git@github.com:avnish1432/linux.git
-git branch -M main
-git push -u origin main
 
 #Git Repository setup code
 git init
@@ -40,5 +31,31 @@ git add <file_name>
 git commit -m "first commit"
 git remote add origin git@github.com:avnish1432/linux.git
 git push -u origin master
+
+#example
+
+$ git init
+Reinitialized existing Git repository in /home/avnkumar/linux/.git/
+
+$ git add setup-example 
+
+$ git commit -m "new example"
+[master df98e62] new example
+ 1 file changed, 41 insertions(+)
+ create mode 100644 setup-example
+
+$ git remote add origin git@github.com:avnish1432/linux.git
+fatal: remote origin already exists.
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 956 bytes | 956.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:avnish1432/linux.git
+   a713bd9..df98e62  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
 
 
