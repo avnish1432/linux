@@ -74,7 +74,8 @@ Syncing disks.
 # pvs
 PV         VG   Fmt  Attr PSize   PFree
 /dev/sda2  rhel lvm2 a--  <49.00g    0
-[root@vm254-101 ~]# vgs
+
+# vgs
 VG   #PV #LV #SN Attr   VSize   VFree
 rhel   1   2   0 wz--n- <49.00g    0
 
@@ -83,7 +84,8 @@ rhel   1   2   0 wz--n- <49.00g    0
 # pvs
 PV         VG   Fmt  Attr PSize   PFree
 /dev/sda2  rhel lvm2 a--  <49.00g    0
-[root@vm254-101 ~]# fdisk -l
+
+# fdisk -l
 
 Disk /dev/sda: 85.9 GB, 85899345920 bytes, 167772160 sectors
 Units = sectors of 1 * 512 = 512 bytes
@@ -110,20 +112,23 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 # pvs
 PV         VG   Fmt  Attr PSize   PFree
 /dev/sda2  rhel lvm2 a--  <49.00g    0
-[root@vm254-101 ~]#  pvcreate /dev/sda3
+
+#  pvcreate /dev/sda3
 Physical volume "/dev/sda3" successfully created.
 
 # pvs
 PV         VG   Fmt  Attr PSize   PFree
 /dev/sda2  rhel lvm2 a--  <49.00g     0
 /dev/sda3       lvm2 ---   30.00g 30.00g
-[root@vm254-101 ~]# vgs
+
+# vgs
 VG   #PV #LV #SN Attr   VSize   VFree
 rhel   1   2   0 wz--n- <49.00g    0
 
 # vgextend rhel /dev/sda3
 Volume group "rhel" successfully extended
-[root@vm254-101 ~]# vgs
+
+# vgs
 VG   #PV #LV #SN Attr   VSize  VFree
 rhel   2   2   0 wz--n- 78.99g <30.00g
 
