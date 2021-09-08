@@ -22,7 +22,7 @@ git init
 git status
 git add .
 git commit -m "new"
-git oust -u origin master
+git push -u origin master
 
 =========================
 
@@ -31,6 +31,14 @@ git add <file_name>
 git commit -m "first commit"
 git remote add origin git@github.com:avnish1432/linux.git
 git push -u origin master
+
+=========================
+
+git init
+git add .
+git commit -m "update"
+git push -u origin master
+
 
 #example
 
