@@ -1,0 +1,31 @@
+# yum module update
+
+# yum module list nodejs
+Updating Subscription Management repositories.
+Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+Name               Stream               Profiles                                         Summary
+nodejs             10 [d][e]            common [d], development, minimal, s2i            Javascript runtime
+nodejs             12                   common [d], development, minimal, s2i            Javascript runtime
+nodejs             14                   common [d], development, minimal, s2i            Javascript runtime
+
+Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
+
+# yum module info nodejs:14
+# yum module reset nodejs
+# yum module enable nodejs:14
+# yum module list nodejs           
+# yum module install nodejs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
